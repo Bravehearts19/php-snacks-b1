@@ -1,5 +1,14 @@
 <?php 
-
+    $randomArray = [];
+    while (count($randomArray) < 15) {
+        $randomNumber = rand(0, 15);
+        if(!array_search($randomNumber, $randomArray)) {
+            array_push($randomArray, $randomNumber);
+        }
+    }
+    echo "<pre>";
+    var_dump($randomArray);
+    echo "</pre>";
 ?>
 
 <!DOCTYPE html>
