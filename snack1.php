@@ -16,14 +16,14 @@
         <header></header>
         <main>
             <h2>
-            <?php 
-                if(strlen($name) > 3 && str_contains($email, '@') && str_contains($email, '.') && is_numeric($age)) {
-                    $text = "Accesso riuscito";
-                } else {
-                    $text = "Accesso negato";
-                }
-                echo $text;
-            ?>
+                <?php 
+                    if(strlen($name) > 3 && strrpos($email, '@') && strrpos($email, '.') && is_numeric($age)) {
+                        $text = "Accesso riuscito";
+                    } else {
+                        $text = "Accesso negato";
+                    }
+                    echo $text;
+                ?>
             </h2>
         </main>
         <footer></footer>
