@@ -1,5 +1,7 @@
 <?php 
-
+    $name = $_GET["name"];
+    $email = $_GET["email"];
+    $age = $_GET["age"];
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +13,19 @@
         <title>Snack 1</title>
     </head>
     <body>
-        
+        <header></header>
+        <main>
+            <h2>
+            <?php 
+                if(strlen($name) > 3 && str_contains($email, '@') && str_contains($email, '.') && is_numeric($age)) {
+                    $text = "Accesso riuscito";
+                } else {
+                    $text = "Accesso negato";
+                }
+                echo $text;
+            ?>
+            </h2>
+        </main>
+        <footer></footer>
     </body>
 </html>
