@@ -1,7 +1,12 @@
 <?php 
-    $name = $_GET["name"];
-    $email = $_GET["email"];
-    $age = $_GET["age"];
+    $name = "";
+    $email = "";
+    $age = "";
+    if(isset($_GET["name"]) && isset($_GET["name"]) && isset($_GET["name"])) {
+        $name = $_GET["name"];
+        $email = $_GET["email"];
+        $age = $_GET["age"];
+    }
 ?>
 
 <!DOCTYPE html>
